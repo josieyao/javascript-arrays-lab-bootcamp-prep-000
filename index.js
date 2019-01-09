@@ -50,12 +50,21 @@ function destructivelyRemoveLastKitten() {
   return kittens;
 }
 
+/*  describe('destructivelyRemoveFirstKitten()', function() {
+    it('removes the First kitten from the kittens array', function() {
+      window.kittens = ['Milo', 'Otis', 'Garfield'];
+      destructivelyRemoveFirstKitten()
 
+      expect(window.kittens).toEqual(["Otis", "Garfield"])
+    })
+  })*/
 
 function destructivelyRemoveFirstKitten() {
   kittens.shift();
   return kittens;
 }
+
+
 
 function appendKitten(name) {
   return [...kittens, name];
