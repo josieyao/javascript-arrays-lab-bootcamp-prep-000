@@ -90,7 +90,14 @@ function prependKitten(name) {
   return [name, ...kittens];
 }
 
+/*  describe('removeLastKitten()', function() {
+    it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
+      window.kittens = ['Milo', 'Otis', 'Garfield'];
+      expect(removeLastKitten()).toEqual(["Milo", "Otis"])
 
+      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
+    })
+  })*/
 
 function removeLastKitten() {
   return kittens.slice(0, kittens.length - 1);
